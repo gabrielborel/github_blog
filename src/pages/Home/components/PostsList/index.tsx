@@ -8,12 +8,10 @@ interface PostsListProps {
 }
 
 export const PostsList = ({ posts }: PostsListProps) => {
-  console.log(posts);
-
   return (
     <PostsListContainer>
       {posts.map((post) => (
-        <Post to={`/post/${post.number}`}>
+        <Post key={post.number} to={`/post/${post.number}`}>
           <header>
             <strong>{post.title}</strong>
             <span>

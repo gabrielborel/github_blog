@@ -26,11 +26,19 @@ export const Home = () => {
     fetchPosts();
   }, []);
 
+  const searchPosts = (filterValue: string) => {
+    const searchedPosts = posts.filter((post) =>
+      post.body.includes(filterValue)
+    );
+
+    setPosts(searchedPosts);
+  };
+
   return (
     <HomeContainer>
       <UserProfile />
 
-      <SearchForm />
+      <SearchForm searchPost={searchPosts} numberOfPosts={posts.length} />
 
       <PostsList posts={posts} />
     </HomeContainer>
