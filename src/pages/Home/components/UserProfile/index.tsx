@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { api } from '../../../libs/api';
+import { api } from '../../../../libs/api';
 import { ProfileContainer, ProfileData } from './styles';
 import { GithubLogo, Buildings, Users, ArrowSquareOut } from 'phosphor-react';
 
