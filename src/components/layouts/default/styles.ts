@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
-export const LayoutContainer = styled.section``;
+export const LayoutContainer = styled.section`
+  margin-bottom: 10rem;
+`;
 
 export const CoverImage = styled.img`
   width: 100%;
