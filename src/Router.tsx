@@ -1,12 +1,12 @@
 import { Route, Routes } from 'react-router-dom';
 import { DefaultLayout } from './components/layouts/default';
-import { Profile } from './pages/Profile';
+import { Home } from './pages/Home';
 
 export const Router = () => {
   return (
     <Routes>
       <Route path='/' element={<DefaultLayout />}>
-        <Route path='/' element={<Profile />} />
+        <Route path='/' element={<Home />} />
       </Route>
     </Routes>
   );
